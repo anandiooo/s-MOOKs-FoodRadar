@@ -1,0 +1,168 @@
+[
+  {
+    "allLines" : [
+      "Matcha's bitterness",
+      "cuts the mascarpone.",
+      "That's the trick."
+    ],
+    "charsPerLine" : 20,
+    "lines" : [
+      "Matcha's bitterness",
+      "cuts the mascarpone.",
+      "That's the trick."
+    ],
+    "maxLines" : 3,
+    "text" : "Matcha's bitterness cuts the mascarpone. That's the trick."
+  },
+  {
+    "allLines" : [
+      "Matcha",
+      "Tiramisu"
+    ],
+    "charsPerLine" : 10,
+    "lines" : [
+      "Matcha",
+      "Tiramisu"
+    ],
+    "maxLines" : 2,
+    "text" : "Matcha Tiramisu"
+  },
+  {
+    "allLines" : [
+      "Salt Bread"
+    ],
+    "charsPerLine" : 10,
+    "lines" : [
+      "Salt Bread"
+    ],
+    "maxLines" : 2,
+    "text" : "Salt Bread"
+  },
+  {
+    "allLines" : [
+      "Everyone's ordering",
+      "it."
+    ],
+    "charsPerLine" : 20,
+    "lines" : [
+      "Everyone's ordering",
+      "it."
+    ],
+    "maxLines" : 2,
+    "text" : "Everyone's ordering it."
+  },
+  {
+    "allLines" : [
+
+    ],
+    "charsPerLine" : 20,
+    "lines" : [
+
+    ],
+    "maxLines" : 3,
+    "text" : ""
+  },
+  {
+    "allLines" : [
+      "one"
+    ],
+    "charsPerLine" : 20,
+    "lines" : [
+      "one"
+    ],
+    "maxLines" : 3,
+    "text" : "one"
+  },
+  {
+    "allLines" : [
+      "exactlytwentychars!!"
+    ],
+    "charsPerLine" : 20,
+    "lines" : [
+      "exactlytwentychars!!"
+    ],
+    "maxLines" : 2,
+    "text" : "exactlytwentychars!!"
+  },
+  {
+    "allLines" : [
+      "twentyonecharacters!",
+      "!"
+    ],
+    "charsPerLine" : 20,
+    "lines" : [
+      "twentyonecharacters!",
+      "!"
+    ],
+    "maxLines" : 2,
+    "text" : "twentyonecharacters!!"
+  },
+  {
+    "allLines" : [
+      "supercalif",
+      "ragilistic",
+      "expialidoc",
+      "ious"
+    ],
+    "charsPerLine" : 10,
+    "lines" : [
+      "supercalif",
+      "ragilistic"
+    ],
+    "maxLines" : 2,
+    "text" : "supercalifragilisticexpialidocious"
+  },
+  {
+    "allLines" : [
+      "a b c"
+    ],
+    "charsPerLine" : 20,
+    "lines" : [
+      "a b c"
+    ],
+    "maxLines" : 2,
+    "text" : "a  b   c"
+  },
+  {
+    "allLines" : [
+      "This sentence is far",
+      "too long to fit in",
+      "the space available",
+      "here."
+    ],
+    "charsPerLine" : 20,
+    "lines" : [
+      "This sentence is far",
+      "too long to fit in",
+      "the space available"
+    ],
+    "maxLines" : 3,
+    "text" : "This sentence is far too long to fit in the space available here."
+  },
+  {
+    "allLines" : [
+      "Nine seats. One",
+      "roast."
+    ],
+    "charsPerLine" : 20,
+    "lines" : [
+      "Nine seats. One",
+      "roast."
+    ],
+    "maxLines" : 2,
+    "text" : "Nine seats. One roast."
+  },
+  {
+    "allLines" : [
+      "aaaaaaaaaa",
+      "a bb"
+    ],
+    "charsPerLine" : 10,
+    "lines" : [
+      "aaaaaaaaaa",
+      "a bb"
+    ],
+    "maxLines" : 2,
+    "text" : "aaaaaaaaaaa bb"
+  }
+]

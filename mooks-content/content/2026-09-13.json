@@ -1,0 +1,60 @@
+{
+  "dropId": "2026-09-13",
+  "city": "jkt",
+  "publishAt": "2026-09-13T02:00:00Z",
+  "items": [
+    {
+      "id": "kt-006",
+      "title": "Kaya Toast",
+      "kind": "dish",
+      "trend": { "word": "steady" },
+      "hook": "Old. Still unbeaten.",
+      "why": "Coconut jam, cold butter, hot bread. Nothing to improve.",
+      "place": "Toko Roti Lim",
+      "link": "f3k7",
+      "tags": ["breakfast", "toast", "classic"]
+    },
+    {
+      "id": "es-007",
+      "title": "Es Kopi Susu",
+      "kind": "drink",
+      "trend": { "percent": 12, "source": "editorial/shop-count-jkt/2026-09" },
+      "hook": "The 15k benchmark.",
+      "why": "Palm sugar, thin milk, hard ice. Judge a shop by it.",
+      "place": "Kopi Kenangan",
+      "link": "g9d2",
+      "tags": ["coffee", "drink", "local"]
+    },
+    {
+      "id": "od-008",
+      "title": "Durian Pizza",
+      "kind": "oddity",
+      "trend": { "word": "rising" },
+      "hook": "Somebody had to.",
+      "why": "Cheese and durian are both funk. It nearly works.",
+      "link": "h5p1",
+      "tags": ["oddity", "durian", "pizza"]
+    },
+    {
+      "id": "pl-009",
+      "title": "Warung Tepi",
+      "kind": "place",
+      "trend": { "word": "steady" },
+      "hook": "Four tables, no sign.",
+      "why": "Find the blue door. Order whatever is left at 7pm.",
+      "place": "Kemang",
+      "link": "j2w8",
+      "tags": ["place", "warung", "dinner"]
+    },
+    {
+      "id": "cf-010",
+      "title": "Cheese Tea",
+      "kind": "drink",
+      "trend": { "word": "peaking" },
+      "hook": "Salt on top of tea.",
+      "why": "The foam is salted cream. Drink it without a straw.",
+      "link": "k7c3",
+      "tags": ["tea", "drink", "viral"]
+    }
+  ]
+}

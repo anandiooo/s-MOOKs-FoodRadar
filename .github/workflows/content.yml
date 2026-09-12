@@ -1,0 +1,66 @@
+name: content
+
+# Validates and publishes the daily drop.
+#
+# The whole backend is this file plus a static host. There is no server to keep
+# alive, nothing to patch, and no secret on the device that could leak.
+#
+# NOTE: workflows only run from the repository root, so this lives here rather than
+# inside mooks-content/, and every step sets working-directory.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "mooks-content/**"
+      - ".github/workflows/content.yml"
+  pull_request:
+    paths:
+      - "mooks-content/**"
+      - ".github/workflows/content.yml"
+  schedule:
+    # 01:30 UTC = 08:30 WIB, so a new drop is live before the 9am promise on device.
+    - cron: "30 1 * * *"
+  workflow_dispatch:
+
+defaults:
+  run:
+    working-directory: mooks-content
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      # Guards against the JS wrap implementation drifting from the Swift reference.
+      # Regenerate the golden file with:
+      #   cd mooks-sim && swift run mooks-render --emit-vectors > ../mooks-content/test/wrap-vectors.json
+      - name: Wrap parity test
+        run: node test/wrap.test.mjs
+
+      # A content mistake fails the build. It must never reach a device.
+      - name: Validate content
+        run: node scripts/validate.mjs
+
+      - name: Build static payload
+        run: node scripts/build.mjs
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: mooks-content/dist/
+
+      # Deploy step, enabled once the Cloudflare project exists.
+      # - name: Deploy to Cloudflare Pages
+      #   uses: cloudflare/wrangler-action@v3
+      #   with:
+      #     apiToken: ${{ secrets.CF_API_TOKEN }}
+      #     accountId: ${{ secrets.CF_ACCOUNT_ID }}
+      #     command: pages deploy dist --project-name=mooks
+      #   working-directory: mooks-content

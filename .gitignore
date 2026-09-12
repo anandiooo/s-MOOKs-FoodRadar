@@ -1,0 +1,26 @@
+# Swift build products
+.build/
+*.xcodeproj
+*.xcworkspace
+Package.resolved
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Built content payload. Regenerate with: cd mooks-content && npm run build
+# CI builds and deploys this; it does not belong in version control.
+mooks-content/dist/
+
+# PlatformIO
+.pio/
+.pioenvs/
+.piolibdeps/
+
+# NOTE: mooks-sim/out/ IS committed on purpose. Those renders are design
+# artefacts meant to be viewed in the browser without a Swift toolchain, and
+# after tools/optimize-png.mjs the whole set is ~150 KB.
+
+# OS
+.DS_Store
+Thumbs.db

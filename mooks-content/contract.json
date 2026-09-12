@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "_comment": "The single source of truth for what fits on the MOOKS panel. Consumed by the CI validator AND by the Swift simulator. If you change a limit here, re-render the simulator before you believe it.",
+
+  "display": {
+    "controller": "SSD1327",
+    "width": 128,
+    "height": 96,
+    "greyLevels": 16,
+    "activeAreaMM": [26.86, 20.14],
+    "note": "Limits below are measured against a FIXED-WIDTH 5x7 font. On device the firmware uses proportional u8g2 faces (helvB14_tr / helvR08_tr), which can only ever give more room. A font change must never be able to break a layout."
+  },
+
+  "limits": {
+    "title": { "charsPerLine": 10, "maxLines": 2, "maxChars": 18, "scale": 2 },
+    "hook":  { "charsPerLine": 20, "maxLines": 2, "maxChars": 32, "scale": 1 },
+    "why":   { "charsPerLine": 20, "maxLines": 3, "maxChars": 60, "scale": 1 },
+    "place": { "charsPerLine": 20, "maxLines": 1, "maxChars": 20, "scale": 1 }
+  },
+
+  "drop": {
+    "itemCount": 5,
+    "note": "Exactly five. Not four, not twenty. Finiteness is the product, so it is enforced by the build, not by editorial discipline."
+  },
+
+  "link": {
+    "maxCodeLength": 4,
+    "note": "Short codes keep the QR at version 1-2 (21-25 modules). At 2px per module that is 42-50px on a 128px panel. Longer payloads push the modules below 2px and phones stop reading them."
+  },
+
+  "kinds": ["dish", "drink", "place", "oddity"],
+
+  "trend": {
+    "words": ["rising", "steady", "peaking"],
+    "percentRequiresSource": true,
+    "note": "A numeric trend must carry a source. If you cannot cite it, use a direction word. Printing invented precision on a physical object is the fastest way to lose a reviewer's trust (review risk 13)."
+  }
+}
