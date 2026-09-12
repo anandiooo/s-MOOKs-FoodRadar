@@ -18,6 +18,9 @@ intentionally-unfinished firmware skeleton.
 
 > **Quickest way in:** open [`mooks-sim/out/screens/6x/`](mooks-sim/out/screens/6x)
 > and look at the 16 screens. That's the product. Then read the review.
+>
+> **Want the honest status of every part** — what's done, what's designed but
+> uncompiled, what's not started — see [`PROJECT-STATUS.md`](PROJECT-STATUS.md).
 
 ---
 
